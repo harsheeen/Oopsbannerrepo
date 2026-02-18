@@ -1,25 +1,65 @@
 /** 
-* OOPSBANNERAPP UC5 - OOPS BANNER Display Application with array without new key word and for each loop
+* OOPSBANNERAPP UC6 - OOPS BANNER Display Application with the help of functions
 * @author Harsheen
-* @version 5.0
+* @version 6.0
 **/
 class UseCase{
-	public static void main(String[] args){
-	String array[]={
-		 "   ***   " + " " + "   ***   " + " " + " ******   " + "  ***** ",
-		 " **   **" + " " + "  **   **" + " " + "  **   **" + " " +  " **",
-		 "**     **" + " " + "**     **" + " " + " **    **" + " " + "**",
-		 "**     **" + " " + "**     **" + "  **   **" + " " + " " + " **",
-		 "**     **" + " " + "**     **" + " " + " ****** " + " " + "   ****",
-		 "**     **" + " " + "**     **" + " " + " **     " + " " + "      **",
-		 "**     **" + " " + "**     **" + " " + " **     " + " " + "       **",
-		 " **   **" + " " + "  **   **" + " " + "  **     " + " " + "      **",
-		 "   ***   " + " " + "   ***   " + " " + " **     " + "  ***** "};
+	public static String[] get OPattern(){
+			return new String []{
+		 "   ***   ",
+		 " **   **" ,
+		 "**     **" ,
+		 "**     **",
+		 "**     **" ,
+		 "**     **" ,
+		 "**     **" ,
+		 " **   **" ,
+		 "   ***   " };}
 		 
-		 for(String name:array){
-		 System.out.println(name);
-		 }
-	
-	
+		 
+	public static String[] get PPattern(){
+			return new String []{
+		   ******   " ,
+		"  **   **",
+		 " **    **" ,
+		"  **   **" ,
+		  " ****** " ,
+		 " **     " ,
+		"  **     " 
+		 " **     ",
+		 " **   "};} 	 
+		 
+	public static String[] get SPattern(){
+			return new String []{
+		   ******     " ,
+		"  **         ",
+		 " **         " ,
+		"  **         " ,
+		  " ******    " ,
+		 "      **     " ,
+		"       **     " 
+		 "      **     ",
+		 "  ******   "};} 	
+
+		public static void main(String[] args) { 
+		for (String line : getOPattern()) { 
+		System.out.println(line); } 
+		System.out.println(); 
+		
+		
+		for (String line : getPPattern()) 
+		{ System.out.println(line); } 
+		System.out.println(); 
+		
+		for (String line : getPPattern()) 
+		{ System.out.println(line); } 
+		System.out.println(); 
+		
+		
+		for (String line : getSPattern()) {
+		System.out.println(line);
+		} }
+		 
 	}
-}
+
+
